@@ -1,0 +1,637 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#canvas {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: radial-gradient(circle,#040202, #f4f4f4);
+}
+
+.canvas {
+    width: 100vw;
+    height: 100vh;
+}
+
+section {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #f4f4f4;
+}
+
+/* Home section */
+nav {
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr 10%;
+    min-height: 10vh;
+    align-items: center;
+}
+
+#logo {
+    grid-column: 1/3;
+    font-size: 25px;
+    color: #040202;
+    margin-left: 5%;
+    align-self: end;
+}
+
+header section {
+    display: flex;
+    height: 80vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.showcase {
+    width: 100%;
+    height: 60%;
+    position: relative;
+    border-radius: 25px;
+}
+
+.showcase::after {
+    content: '';
+    background: #040202;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.2;
+    border-radius: 25px;
+}
+
+.headline {
+    position: absolute;
+    top: 55%;
+    left: 4%;
+    font-size: 30px;
+    transform: translate(-20%, -70%);
+    z-index: 1;
+    border-bottom: 0.5px dotted rgba(68, 63, 63, 0.6);
+}
+
+/* Home Navigation */
+.icon-btn {
+    width: 50px;
+    height: 50px;
+    background: radial-gradient(circle,#040202, #D00C0C);
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    transition: width 0.4s ease-in-out;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color:#f4f4f4;
+  }
+
+.buton {
+    grid-column: 4;
+    justify-self: end;
+    margin-right: 60%;
+}
+
+.icon-btn:hover {
+    width: 250px;
+}
+
+.plane {
+    position: inherit;
+    align-self: center;
+    justify-self: center;
+    color: #f4f4f4;
+    font-size: 20px;
+}
+
+.icon-btn:hover .paper {
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.btn-txt {
+    padding: 0px 20px;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+.icon-btn:hover .btn-txt {
+    opacity: 1;
+}
+
+.paper {
+    color: #f4f4f4;
+    font-size: 25px;
+    position: absolute;
+    align-self: center;
+    left:12px;
+}
+
+/* SVG Containers */
+.img-home {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #f4f4f4;
+    display: block;
+    margin: auto;
+    border-radius: 25px;
+}
+
+.img-about {
+  position: relative;
+  width: 80%;
+  height: 100%;
+}
+
+.img-contact {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* About section */
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-icons {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.PrestaShop {
+  grid-column: 2;
+  grid-row: 2;
+  z-index: 2;
+}
+.WordPress {
+  grid-column: 2;
+  grid-row: 3;
+  z-index: 2;
+}
+.Flutter {
+  grid-column: 2;
+  grid-row: 4;
+  z-index: 2;
+}
+.Codeigniter {
+  grid-column: 3;
+  grid-row: 2;
+  z-index: 2;
+}
+.Magento {
+  grid-column: 3;
+  grid-row: 3;
+  z-index: 2;
+}
+.Laravel {
+  grid-column: 3;
+  grid-row: 4;
+  z-index: 2;
+}
+
+.icon img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.left-icons {
+  display: block;
+  margin-left: 0;
+}
+
+.right-icons {
+  display: block;
+  margin-left: 50px;
+}
+
+.text-wraper {
+grid-column: 3/5;
+grid-row: 1 / span 6;
+z-index: 1;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.about-text {
+width: 35%;
+height: 45%;
+margin-right: 5%;
+}
+
+.about-text p {
+  text-align: center;
+  font-weight: 550;
+  color: #040202;
+  font-size: 30px;
+}
+  
+/* Contact section */
+#contact {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-container {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.contact-wraper {
+  width: 350px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+/* Contact Button */
+button:hover {
+  animation: rotate 0.7s ease-in-out both;
+}
+
+button:hover span {
+  animation: storm 0.7s ease-in-out both;
+  animation-delay: 0.06s;
+}
+
+#contact-us {
+  margin-top: 50px;
+  outline: none;
+  text-decoration: none;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 50px;
+  width: 150px;
+  opacity: 1;
+  background: radial-gradient(circle,#040202, #D00C0C);
+  border: 1px solid rgba(68, 63, 63, 0.6);
+}
+
+#contact-us span {
+  color: #f4f4f4;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+#contact-us:hover {
+  animation: rotate 0.7s ease-in-out both;
+}
+
+#contact-us:hover span {
+  animation: storm 0.7s ease-in-out both;
+  animation-delay: 0.06s;
+}
+
+#contact-us i {
+  font-size: 40px;
+}
+
+/* Flipcard */
+.maincontainer {
+  position: relative;
+  width: 550px;
+  height: 90%;
+  background: #f4f4f4;
+  border-radius: 25px;
+  box-shadow: 10px 10px 20px #D00C0C;
+}
+
+.thecard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1s ease;
+  transform: rotateY(180deg);
+}
+
+.thefront {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.theback {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 25px;
+  background: #fafafa;
+  transform: rotateY(0deg);
+}
+
+.contact-text {
+height: 90%;
+display: flex;
+flex-direction: column;
+align-content: center;
+justify-content: center;
+text-align: center;
+font-weight: 550;
+font-size: 30px;
+margin-right: 300px;
+}
+
+.container {
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-content: center;
+justify-content: center;
+}
+
+form {
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-content: center;
+justify-content: center;
+color: #040202;
+}
+
+.form-group,
+.form-control,
+.submit-button {
+padding: 10px;
+margin: 10px;
+} 
+
+.form-group {
+display: flex;
+flex-direction: column;
+align-content: center;
+justify-content: center;
+font-size: 20px;
+}
+
+.form-control {
+outline: none;
+border-radius: 10px;
+border: 1px solid #040202;
+width: 85%;
+align-self: center;
+font-size: 15px;
+}
+
+.form-control:focus {
+box-shadow: 0 0 5px #D00C0C;
+border: 1px solid #D00C0C;
+}
+
+.submit-button {
+outline: none;
+border-radius: 10px;
+font-size: 20px;
+width: 30%;
+align-self: center;
+color: #f4f4f4;
+background: radial-gradient(circle,#040202, #D00C0C);
+border: 1px solid rgba(68, 63, 63, 0.6);
+margin-top: 0;
+}
+
+.submit-button:hover {
+animation: none;
+}
+
+.submit-button:active {
+box-shadow: 0 0 20px #D00C0C;
+}
+
+textarea {
+height: 110px;
+}
+
+.click {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+
+/* Footer section*/
+#footer {
+    display: grid;
+    grid-template-columns: auto(3, 1fr);
+    height: 8vh;
+    padding: 5px;
+    align-items: center;
+    justify-items: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #444;
+    font-size: 18px;
+    font-weight: 550;
+    color: #040202;
+}
+  
+.footer-text {
+    text-align: left;
+}
+
+.footer-top {
+    grid-column: 2/3;
+    text-align: center;
+}
+
+.footer-contact{
+    grid-column: 3/3;
+    text-align: right;
+    font-size: 18px;
+}
+
+.footer-contact i {
+  color: #D00C0C;
+  font-size: 25px;
+}
+
+.phone {
+  color: #f4f4f4;
+}
+
+/* Back to top */
+button {
+  background: none;
+  cursor: pointer;
+  border: none;
+  outline: none; 
+}
+
+#scroll {
+    position:relative;
+    color: #f4f4f4;
+}
+
+#scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-11px;
+    margin-top:-10px;
+}
+
+#scroll span i {
+    font-size: 25px;
+}
+
+#scroll::before {
+    content: '';
+    width: 30px; 
+    height: 30px;
+    border-radius: 100%;
+    border: 2px solid #D00C0C;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, -45%);
+    animation: ring 2s infinite;
+}
+
+
+#errordiv {
+  width: 100%;
+  height: 200px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  background: rgba(255,0,0,0.4);
+  color: #fff;
+  box-shadow: 10px 10px 20px #D00C0C;
+  visibility: hidden;
+}
+
+#failed{
+  width: 100%;
+  height: 200px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  background: rgba(255,0,0,0.4);
+  color: #fff;
+  box-shadow: 10px 10px 20px #D00C0C;
+  visibility: visible;
+}
+#passed{
+  width: 100%;
+  height: 200px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  background: #26a69a;
+  color: #fff;
+  box-shadow: 10px 10px 20px #00695c;
+  visibility: visible;
+}
+
+
+
+
+/* Flipcard animation */
+@keyframes rotate {
+    0% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+    25% {
+      transform: rotate(3deg) translate3d(0, 0, 0);
+    }
+    50% {
+      transform: rotate(-3deg) translate3d(0, 0, 0);
+    }
+    75% {
+      transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+    100% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes storm {
+    0% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+    25% {
+      transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+    50% {
+      transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+    75% {
+      transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+  }
+
+  /* Pulsating animation */
+  @keyframes ring {
+    0% {
+      width: 30px;
+      height: 30px;
+      opacity: 1;
+    }
+    100% {
+      width: 60px;
+      height: 60px;
+      opacity: 0;
+    }
+  }
+
+

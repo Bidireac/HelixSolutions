@@ -1,0 +1,1372 @@
+@media (max-width: 340px) {
+nav {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+#logo {
+    font-size: 20px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.buton {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row: 1;
+    width: 135px;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.headline {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+} 
+/* Home Navigation */
+.icon-btn {
+  width: 300px;
+  height: 50px;
+  display: flex;
+  align-content: start;
+  justify-content: center;
+}
+.icon-btn:hover {
+  width: 300px;
+}
+
+.icon-btn .paper {
+  opacity: 1;
+}
+.btn-txt {
+  opacity: 1;
+}
+.paper {
+  display: none;
+}
+/* About section */
+.img-about > img {
+  display: none;
+}
+.grid-icons {
+  grid-gap: 25px 45px;
+}
+.PrestaShop {
+  grid-column: 1;
+  grid-row: 4;
+}
+.WordPress {
+  grid-column: 2;
+  grid-row: 4;
+}
+.Flutter {
+  grid-column: 3;
+  grid-row: 4;
+}
+.Codeigniter {
+  grid-column: 1;
+  grid-row: 5;
+}
+.Magento {
+  grid-column: 2;
+  grid-row: 5;
+}
+.Laravel {
+  grid-column: 3;
+  grid-row: 5;
+}
+.PrestaShop,
+.WordPress,
+.Flutter {
+   padding-bottom: 60px;
+   padding:20px;
+}
+.Codeigniter,
+.Magento,
+.Laravel {
+  margin-left: 0;
+  padding: 20px;
+  padding-bottom:60px;
+}
+.icon img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.text-wraper {
+grid-column: 1 / span 5;
+grid-row: 1 / span 6;
+
+}
+.about-text {
+width: 100%;
+height: 100%;
+margin-top:60px;
+}
+.about-text p {
+  padding:20px;
+  text-align: left;
+  font-size: 25px;
+  color: #f4f4f4;
+}
+/* Contact section */
+.contact-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.contact-wraper,
+.click{
+    display: none;
+}
+.contact-text {
+  height: 0;
+  margin: 0;
+  padding: 0;
+}
+#errordiv {
+z-index:2;
+width: 320px;
+height: 40px;
+align-self: center;
+}
+/* Flipcard */
+.maincontainer {
+  width: 100%;
+  height: 94%;
+}
+.thefront > img{
+  display: none;
+  }
+  .thecard {
+    transform: rotateY(0deg);
+  }
+
+.form-group,
+.form-control,
+.submit-button {
+padding: 5px;
+} 
+.form-control {
+width: 100%;
+}
+textarea {
+  height: 130px;
+}
+form > .submit-button {
+ justify-self: start;
+}
+
+/* Footer section*/
+#footer {
+  grid-template-columns: auto(2, 1fr);
+  background: #666;
+}
+.footer-text {
+  display: none;
+}
+.footer-top {
+  grid-column: 1/3;
+  text-align: center;
+}
+.footer-contact{
+  grid-column: 3/3;
+  color:#fff;
+  font-size: 15px;
+}
+.footer-contact i {
+  color: #040202;
+  font-size: 20px;
+}
+/* Back to top */
+#scroll span {
+    margin-left:-15px;
+    margin-top:-20px;
+}
+#scroll::before {
+    transform: translate(-55%, -65%);
+}
+}
+
+
+@media (min-width: 341px) and (max-width: 400px) {
+ /* Home section */
+nav {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+#logo {
+    font-size: 19px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    margin-left: 2%;
+    margin-top: 20px;
+}
+
+.buton {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row: 1;
+    width: 135px;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+.headline {
+    position: absolute;
+    top: 15%;
+    left: 20%;
+}  
+
+/* Home Navigation */
+.icon-btn {
+    width: 300px;
+    height: 50px;
+    display: flex;
+    align-content: start;
+    justify-content: center;
+  }
+  .icon-btn:hover {
+    width: 300px;
+  }
+
+.icon-btn .paper {
+    opacity: 1;
+}
+.btn-txt {
+    opacity: 1;
+}
+.paper {
+    display: none;
+}
+
+/* About section */
+.img-about > img {
+    display: none;
+}
+.grid-icons {
+    grid-gap: 55px 55px;
+  }
+  .PrestaShop {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .WordPress {
+    grid-column: 2;
+    grid-row: 4;
+  }
+  .Flutter {
+    grid-column: 3;
+    grid-row: 4;
+  }
+  .Codeigniter {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  .Magento {
+    grid-column: 2;
+    grid-row: 5;
+  }
+  .Laravel {
+    grid-column: 3;
+    grid-row: 5;
+  }
+  .PrestaShop,
+  .WordPress,
+  .Flutter {
+     padding-bottom: 60px;
+     padding:20px;
+  }
+  .Codeigniter,
+  .Magento,
+  .Laravel {
+    margin-left: 0;
+    padding: 20px;
+  }
+  .icon img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+  }
+  .text-wraper {
+  grid-column: 1 / span 5;
+  grid-row: 2 / span 6;
+  
+  }
+  .about-text {
+  width: 100%;
+  height: 100%;
+  }
+  .about-text p {
+    padding:20px;
+    text-align: left;
+    font-size: 25px;
+    color: #f4f4f4;
+  }
+
+  /* Contact section */
+  .contact-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  .contact-wraper,
+  .click{
+      display: none;
+  }
+  .contact-text {
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+#errordiv {
+  z-index:2;
+  width: 370px;
+  height: 50px;
+  align-self: center;
+}
+/* Flipcard */
+.maincontainer {
+    width: 100%;
+    height: 94%;
+  }
+.thefront > img{
+    display: none;
+    }
+    .thecard {
+      transform: rotateY(0deg);
+    }
+  .form-group,
+  .form-control,
+  .submit-button {
+  padding: 10px;
+  } 
+  .form-control {
+  width: 100%;
+  }
+  textarea {
+    height: 130px;
+}
+  form > .submit-button {
+   justify-self: start;
+}
+
+/* Footer section*/
+#footer {
+    grid-template-columns: auto(2, 1fr);
+    background: #666;
+}
+.footer-text {
+    display: none;
+}
+.footer-top {
+    grid-column: 1/3;
+    text-align: center;
+}
+.footer-contact{
+    grid-column: 3/3;
+    color:#fff;
+}
+.footer-contact i {
+    color: #040202;
+  }
+/* Back to top */
+  #scroll span {
+      margin-left:-15px;
+      margin-top:-20px;
+  }
+  #scroll::before {
+      transform: translate(-55%, -65%);
+  }
+
+}
+
+@media (min-width: 401px) and (max-width: 500px) {
+ /* Home section */
+ nav {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+#logo {
+  font-size: 22px;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  margin-left: 2%;
+  margin-top: 20px;
+}
+
+.buton {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row: 1;
+  width: 160px;
+  padding: 20px;
+  margin-top: 15px;
+}
+
+.headline {
+  position: absolute;
+  top: 15%;
+  left: 22%;
+}  
+
+/* Home Navigation */
+.icon-btn {
+  width: 360px;
+  height: 50px;
+  display: flex;
+  align-content: start;
+  justify-content: center;
+}.icon-btn:hover {
+  width: 360px;
+}
+
+.icon-btn .paper {
+  opacity: 1;
+}
+.btn-txt {
+  opacity: 1;
+  font-size:20px;
+}
+.paper {
+  display: none;
+}
+/* About section */
+.img-about > img {
+  display: none;
+}
+.grid-icons {
+  grid-gap: 55px 70px;
+}
+.PrestaShop {
+  grid-column: 1;
+  grid-row: 3;
+}
+.WordPress {
+  grid-column: 2;
+  grid-row: 3;
+}
+.Flutter {
+  grid-column: 3;
+  grid-row: 3;
+}
+.Codeigniter {
+  grid-column: 1;
+  grid-row: 4;
+}
+.Magento {
+  grid-column: 2;
+  grid-row: 4;
+}
+.Laravel {
+  grid-column: 3;
+  grid-row: 4;
+}
+.PrestaShop,
+.WordPress,
+.Flutter {
+   padding-bottom: 60px;
+   padding:20px;
+}
+.Codeigniter,
+.Magento,
+.Laravel {
+  margin-left: 0;
+  padding: 20px;
+}
+.icon img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-top:70px;
+}
+.text-wraper {
+grid-column: 1 / span 5;
+grid-row: 1 / span 6;
+
+}
+.about-text {
+width: 100%;
+height: 100%;
+margin-top:100px;
+}
+.about-text p {
+  padding:20px;
+  text-align: left;
+  font-size: 30px;
+  color: #f4f4f4;
+}
+  /* Contact section */
+  .contact-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  .contact-wraper,
+  .click{
+      display: none;
+  }
+  .contact-text {
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+#errordiv {
+  z-index:2;
+  width: 400px;
+  height: 50px;
+  align-self: center;
+}
+/* Flipcard */
+.maincontainer {
+    width: 100%;
+    height: 94%;
+  }
+.thefront > img{
+    display: none;
+    }
+    .thecard {
+      transform: rotateY(0deg);
+    }
+  .form-group,
+  .form-control,
+  .submit-button {
+  padding: 15px;
+  } 
+  .form-control {
+  width: 100%;
+  }
+  textarea {
+    height: 150px;
+}
+  form > .submit-button {
+   justify-self: start;
+}
+
+/* Footer section*/
+#footer {
+    grid-template-columns: auto(2, 1fr);
+    background: #666;
+}
+.footer-text {
+    display: none;
+}
+.footer-top {
+    grid-column: 1/3;
+    text-align: center;
+}
+.footer-contact{
+    grid-column: 3/3;
+    color:#fff;
+}
+.footer-contact i {
+    color: #040202;
+  }
+/* Back to top */
+  #scroll span {
+      margin-left:-15px;
+      margin-top:-20px;
+  }
+  #scroll::before {
+      transform: translate(-55%, -65%);
+  }
+
+}
+
+@media (min-width: 370px) and (max-width: 380px) {
+  .form-group,
+  .form-control,
+  .submit-button {
+  padding: 0;
+  font-size: 25px;
+  } 
+  .thecard {
+    transform: rotateY(0deg);
+  }
+}
+
+@media (min-width: 420px) and (max-width: 430px) {
+#errordiv {
+  font-size:25px;
+}
+  .form-group,
+  .form-control,
+  .submit-button {
+  padding: 5px;
+  font-size: 25px;
+  } 
+ input[type=text] {
+    height: 45%;
+  }
+  textarea {
+    height: 120px;
+}
+  form > .submit-button {
+   justify-self: start;
+   font-size: 20px;
+}
+.thecard {
+  transform: rotateY(0deg);
+}
+
+}
+
+@media(min-width: 501px) and (max-width: 768px) {
+/* Home section */
+nav {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+}
+
+#logo {
+  font-size: 35px;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  margin-left: 9%;
+  margin-top: 40px;
+}
+
+.buton {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row: 1;
+  justify-self:center;
+  margin-top: 15px;
+  width:100px;
+  margin-top: 40px;
+}
+
+.headline {
+  position: absolute;
+  top: 12%;
+  left: 30%;
+  font-size: 40px;
+}  
+
+/* Home Navigation */
+.icon-btn {
+  width: 550px;
+  height: 55px;
+  display: flex;
+  align-content: start;
+  justify-content: center;
+}
+.icon-btn:hover {
+  width: 550px;
+}
+
+.icon-btn .paper {
+  opacity: 1;
+}
+.btn-txt {
+  opacity: 1;
+  font-size:30px;
+}
+.paper {
+  display: none;
+}
+/* About section */
+.img-about > img {
+  display: none;
+}
+.grid-icons {
+  grid-gap: 55px 180px;
+}
+.PrestaShop {
+  grid-column: 1;
+  grid-row: 3;
+}
+.WordPress {
+  grid-column: 2;
+  grid-row: 3;
+}
+.Flutter {
+  grid-column: 3;
+  grid-row: 3;
+}
+.Codeigniter {
+  grid-column: 1;
+  grid-row: 4;
+}
+.Magento {
+  grid-column: 2;
+  grid-row: 4;
+}
+.Laravel {
+  grid-column: 3;
+  grid-row: 4;
+}
+.PrestaShop,
+.WordPress,
+.Flutter {
+   padding-bottom: 60px;
+   padding:20px;
+}
+.Codeigniter,
+.Magento,
+.Laravel {
+  margin-left: 0;
+  padding: 20px;
+}
+.icon img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top:70px;
+}
+.text-wraper {
+grid-column: 1 / span 5;
+grid-row: 1 / span 6;
+
+}
+.about-text {
+width: 100%;
+height: 100%;
+margin-top:100px;
+}
+.about-text p {
+  margin-right:160px;
+  padding:45px;
+  text-align: left;
+  font-size: 45px;
+  color: #f4f4f4;
+}
+  /* Contact section */
+  .contact-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  .contact-wraper,
+  .click{
+      display: none;
+  }
+  .contact-text {
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+#errordiv {
+  z-index:2;
+  width: 100%;
+  height: 100px;
+  align-self: center;
+  font-size:40px;
+}
+/* Flipcard */
+.maincontainer {
+    width: 100%;
+    height: 94%;
+  }
+.thefront > img{
+    display: none;
+    }
+    .thecard {
+      transform: rotateY(0deg);
+    }
+  .form-group,
+  .form-control,
+  .submit-button {
+  padding: 10px;
+  font-size: 35px;
+  } 
+  .form-control {
+  width: 100%;
+  }
+ input[type=text] {
+    height: 40%;
+  }
+  textarea {
+    height: 180px;
+}
+  form > .submit-button {
+   justify-self: start;
+   font-size: 30px;
+   margin-bottom:100px;
+}
+
+/* Footer section*/
+#footer {
+    grid-template-columns: auto(2, 1fr);
+    background: #666;
+}
+.footer-text {
+    display: none;
+}
+.footer-top {
+    grid-column: 1/3;
+    text-align: center;
+}
+.footer-contact{
+    grid-column: 3/3;
+    color:#fff;
+    font-size: 25px;
+}
+.footer-contact i {
+    color: #040202;
+    font-size: 35px;
+  }
+/* Back to top */
+  #scroll span {
+      margin-left:-55px;
+      margin-top:-35px;
+  }
+  #scroll::before {
+    transform: translate(-100%, -70%);
+  }
+
+  #scroll span i {
+    font-size: 40px;
+  }
+  @keyframes ring {
+    0% {
+      width: 50px;
+      height: 50px;
+      opacity: 1;
+    }
+    100% {
+      width: 70px;
+      height: 70px;
+      opacity: 0;
+    }
+}
+}
+
+@media(min-width: 769px) and (max-width: 1279px) {
+/* Home section */
+#logo {
+  grid-column: 1/5;
+  font-size: 35px;
+  margin-left: 5%;
+  margin-top: 60px;
+}
+.headline {
+  top: 15%;
+  left: 35%;
+  font-size: 45px;
+}
+/* Home Navigation */
+.icon-btn {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  margin-top: 40px;
+}
+.buton {
+  grid-row: 1;
+}
+.icon-btn:hover {
+  width: 400px;
+}
+.btn-txt {
+  font-size: 30px;
+}
+.paper {
+  font-size: 40px;
+  left:20px;
+}
+
+/* About section */
+.img-about {
+  width: 100%;
+  height: 100%;
+  background: url('./img/aboutmobile.svg')no-repeat center center/contain;
+  margin-top: 30%;
+}
+.img-about > img {
+  visibility: hidden;
+}
+.grid-icons {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(9, 1fr);
+  justify-items: end;
+  align-items: center;
+  margin-top: 3%;
+}
+.PrestaShop {
+  grid-column: 1;
+  grid-row: 3;
+}
+.WordPress {
+  grid-column: 1;
+  grid-row: 4;
+}
+.Flutter {
+  grid-column: 1;
+  grid-row: 5;
+}
+.Codeigniter {
+  grid-column: 3;
+  grid-row: 3;
+}
+.Magento {
+  grid-column: 3;
+  grid-row: 4;
+}
+.Laravel {
+  grid-column: 3;
+  grid-row: 5;
+}
+.left-icons {
+  display: block;
+  padding-left: 180px;
+}
+.right-icons {
+ grid-column: 4;
+ justify-self: start;
+}
+
+.text-wraper {
+grid-column: 1 / span 6;
+grid-row: 1 / span 2;
+}
+.about-text {
+width: 70%;
+height: 50%;
+margin-right: -40px;
+}
+.about-text p {
+  color: #f4f4f4;
+  font-size: 40px;
+}
+/* Contact section */
+.contact-container {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+.contact-text {
+  height: 300px;
+  width: 100%;
+  margin: 0;
+  font-size: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1;
+  color: #f8f8f8;
+  }
+
+.contact-wraper {
+  grid-column: 1 / span 4;
+  grid-row: 1;
+  height: 250px;
+  align-self: center;
+  justify-self: center;
+}
+
+#errordiv {
+  grid-column: 1 / span 4;
+  width:90%;
+  z-index:2;
+  height: 100px;
+  margin-top: 40px;
+  justify-self: center;
+}
+/* Contact Button */
+#contact-us {
+  margin: 0;
+  padding: 0;
+  height: 100px;
+  width: 300px;
+}
+#contact-us i {
+  font-size: 70px;
+}
+.click {
+  grid-row: 2;
+  grid-column: 1 / span 4;
+  padding-bottom: 10px;
+}
+
+
+/* Flipcard */
+.maincontainer {
+  width: 90%;
+  height: 100%;
+  align-self: center;
+  margin-bottom: 170px;
+}
+.form-group {
+font-size: 50px;
+}
+
+.form-control {
+font-size: 30px;
+}
+
+.submit-button {
+border-radius: 15px;
+font-size: 40px;
+width: 40%;
+margin-bottom:0;
+}
+
+textarea {
+height: 150px;
+}
+
+/* Footer section*/
+.footer-text {
+    color:#999;
+    font-size:30px;
+}
+
+.footer-contact{
+    font-size:30px;
+    color:#999;
+}
+
+.footer-contact i {
+  font-size: 40px;
+}
+
+.phone {
+  color: #f4f4f4;
+}
+
+/* Back to top */
+#scroll {
+    position:relative;
+    color: #f4f4f4;
+}
+
+#scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-30px;
+}
+
+#scroll span i {
+    font-size: 40px;
+}
+
+#scroll::before {
+    transform: translate(-30%, -65%);
+}
+
+@keyframes ring {
+  0% {
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+  }
+  100% {
+    width: 90px;
+    height: 90px;
+    opacity: 0;
+  }
+
+}
+}
+
+
+
+@media(min-width: 1280px) and (max-height: 664px) and (max-width: 1439px)  {
+/* Home section */
+.headline {
+  font-size: 20px;
+  top: 25%;
+  left: 45%;
+}
+/* About section */
+.left-icons {
+  grid-column: 1;
+  justify-self: end;
+  margin-left: 0;
+}
+.right-icons {
+  grid-column: 3;
+  justify-self: start;
+  margin-left: 5%;
+ }
+
+ .icon img {
+  width: 8%;
+  height: 10%;
+}
+
+ .about-text {
+  width: 45%;
+  height: 50%;
+  margin-bottom: 18%;
+  }
+
+  
+/* Flipcard */
+.maincontainer {
+  width: 1000px;
+  height: 100%;
+}
+
+.contact-text {
+height: 80%;
+margin-right: 10%;
+}
+
+.form-group,
+.form-control,
+.submit-button {
+padding: 5px;
+margin: 5px;
+} 
+
+.form-group {
+font-size: 25px;
+}
+
+.form-control {
+font-size: 20px;
+}
+
+.submit-button {
+border-radius: 20px;
+font-size: 30px;
+width: 40%;
+}
+
+textarea {
+height: 200px;
+}
+/* Back to top button */
+#scroll span {
+  margin-top:-25px;
+}
+
+#scroll::before {
+  transform: translate(-45%, -70%);
+}
+}
+
+@media (min-width: 1440px) and (max-width: 1600px){
+/* Home section */
+
+#logo {
+  font-size: 30px;
+}
+
+.headline {
+  display: none;
+}
+
+/* Home Navigation */
+
+.icon-btn:hover {
+  width: 350px;
+}
+
+.plane {
+  font-size: 25px;
+}
+.btn-txt {
+  font-size: 25px;
+}
+.icon-btn {
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+}
+.paper {
+  font-size: 30px;
+  left:18px;
+}
+/* SVG Containers */
+.img-about {
+width: 100%;
+}
+/* About section */
+.grid-icons {
+width: 100%;
+height: 100%;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: repeat(6, 1fr);
+}
+
+.PrestaShop {
+grid-column: 1;
+grid-row: 2;
+z-index: 2;
+}
+.WordPress {
+grid-column: 1;
+grid-row: 3;
+z-index: 2;
+}
+.Flutter {
+grid-column: 1;
+grid-row: 4;
+z-index: 2;
+}
+.Codeigniter {
+grid-column: 3;
+grid-row: 2;
+z-index: 2;
+}
+.Magento {
+grid-column: 3;
+grid-row: 3;
+z-index: 2;
+}
+.Laravel {
+grid-column: 3;
+grid-row: 4;
+z-index: 2;
+}
+
+.icon img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.left-icons {
+justify-self:center;
+margin-left: 400px;
+}
+
+.right-icons {
+display: block;
+margin-left: 0;
+}
+
+.text-wraper {
+grid-column: 3/5;
+grid-row: 1 / span 4;
+z-index: 1;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.about-text {
+width: 40%;
+height: 50%;
+margin-right: 20%;
+margin-top: 20%;
+}
+  
+/* Contact section */
+
+.contact-container {
+  width: 100%;
+  height: 100%;
+  margin-top: 5%;
+}
+
+/* Flipcard */
+.maincontainer {
+  width: 700px;
+  height: 80%;
+}
+
+.contact-text {
+height: 80%;
+margin-right: 10%;
+}
+
+.form-group,
+.form-control,
+.submit-button {
+padding: 10px;
+margin: 5px;
+} 
+
+.form-group {
+font-size: 25px;
+}
+
+.form-control {
+font-size: 20px;
+}
+
+.submit-button {
+border-radius: 20px;
+font-size: 30px;
+width: 40%;
+}
+
+textarea {
+height: 200px;
+}
+
+.click {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+/* Footer section*/
+
+.footer-text {
+  text-align: left;
+  font-size: 25px;
+}
+.footer-contact{
+  grid-column: 3/3;
+  text-align: right;
+  font-size: 25px;
+}
+
+.footer-contact i {
+font-size: 30px;
+}
+
+/* Back to top */
+
+
+#scroll span {
+  margin-left:-15px;
+  margin-top:-20px;
+}
+
+#scroll span i {
+  font-size: 30px;
+}
+
+#scroll::before {
+  transform: translate(-45%, -60%);
+}
+
+@keyframes ring {
+  0% {
+    width: 40px;
+    height: 40px;
+    opacity: 1;
+  }
+  100% {
+    width: 70px;
+    height: 70px;
+    opacity: 0;
+  }
+}
+}
